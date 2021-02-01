@@ -36,16 +36,16 @@ header {
   text-decoration: none;
 }
 
-.navbar .active:before {
+.navbar li a:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 78%;
   width: 0px;
   color: red;
 }
 
-.navbar .active:before:hover {
+.navbar li a:before:hover {
   width: 200px;
 }
 
