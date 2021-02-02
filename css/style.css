@@ -80,11 +80,27 @@ ul li a:hover::before {
   border-radius: 50px;
 }
 
-.features figure {
+.right-side figure {
   background-image: url("/images/blob1.svg");
   background-repeat: no-repeat;
   background-position: 60% -40%;
   background-size: 40%;
+  position: relative;
+  animation-name: imgslide;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes imgslide {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 .features {
@@ -100,6 +116,57 @@ ul li a:hover::before {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 900;
+  position: relative;
+  animation-name: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+  0% {
+    opacity: 0;
+    top: -50px;
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+  }
+}
+
+.main-heading .left-side p {
+  position: relative;
+  animation-name: content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.main-heading .left-side .btn {
+  display: inline-block;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Showcase */
