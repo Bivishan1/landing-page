@@ -27,8 +27,8 @@ body .preload {
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 00% 100%);
 } */
 
-header {
-  /* display: inline-block; */
+.main-header {
+  height: 100vh;
 }
 
 .secondary-font {
