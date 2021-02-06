@@ -16,16 +16,19 @@
   <body>
 
 <!-- Navigation Bar -->
-<header class='main-header'>
-    <nav class="navbar navbar-expand-md">  
+<header class='main-header '>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mb-5">  
         <div class="container">
          <div class="logo">
-             <a class="navbar-brand display-4 text-uppercase" href="#" style="text-decoration:none; color:#000;"><strong>MijuApp</strong></a>
-             <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent"></div>
-          </div> 
-      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <a class="navbar-brand display-4 text-uppercase" href="#" style="text-decoration:none; color:#000;"><strong>MijuApp</strong></a>
+            </div> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">          
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-uppercase active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-uppercase" href="#">Features</a>
@@ -41,8 +44,8 @@
           <button type='button' class='nav-link btn btn-outline-danger p-0 rounded-cs'> <a class=" nav-link text-uppercase p-2 ml-5 " href="#">Get Started</a> </button> 
         </li>
       </ul>
+      </div>
     </div>
-  </div>
 </nav>
 
 
@@ -109,7 +112,7 @@
     
       <div class="col-md-4 col-lg-4 col-12 text-center  px-5">
         <figure>
-          <img src="images/video.svg" alt="vieo call" class='img-fluid'  width='90px' height='50px'>        
+          <img src="images/video.svg" alt="vieo call" class='img-fluid'  width='90px' height='50px' >        
         </figure>
         <h2 class='font-weight-bold primary-font pt-5 pb-3'>Video Chat</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloremque perferendis numquam pariatur labore excepturi aperiam quasi blanditiis quis, officia earum culpa! Consectetur magnam ea non saepe amet veniam illo.
@@ -118,7 +121,8 @@
 
     <div class="col-md-4 col-lg-4 col-12 text-center px-5">
       <figure>
-        <img src="images/video.svg" alt="my sticker" class='img-fluid'  width='90px' height='50px'>        
+        <!-- <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/group-2011947-1692194.png" alt="my sticker" class='img-fluid'  width='90px' height='50px'>         -->
+        <img src="https://img.icons8.com/ios/90/000000/conference-call--v2.png" alt="group call" class='img-fluid' />
       </figure>
       <h2 class='font-weight-bold primary-font pt-5 pb-3'>Conference Call</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloremque perferendis numquam pariatur labore excepturi aperiam quasi blanditiis quis, officia earum culpa! Consectetur magnam ea non saepe amet veniam illo.
@@ -127,10 +131,11 @@
     </div>
     <button type='button' class='btn btn-outline-danger text-uppercase text-center mt-5 btn-sm mb-5 rounded-cs'>browse all features</button>
   </div>
+  
 </section>
 <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: inline-block;" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,0L80,48C160,96,320,192,480,245.3C640,299,800,309,960,282.7C1120,256,1280,192,1360,160L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
 <!-- <div style="height: 250px; width:100%" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.19,-19.44 C99.55,172.00 382.84,205.55 522.79,-36.21 L500.00,150.00 L0.23,146.34 Z" style="stroke: none; fill: #f3f4f5;"></path></svg></div> -->
-<div style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-21.22,13.13 C99.55,172.00 382.84,205.55 522.79,-36.21 L510.38,161.15 L-7.67,175.95 Z" style="stroke: none; fill: #f3f4f5"></path></svg></div>
+
 
 
 
@@ -140,7 +145,12 @@
 <!-- Greating  -->
 
 <section class='last-section'>
-  <div class="container">
+
+  <div style="height: 35vh;margin-top: -120px;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; display:block; z-index:-1;"><path d="M-21.22,13.13 C99.55,172.00 382.84,205.55 522.79,-36.21 L510.38,161.15 L-7.67,175.95 Z" style="stroke: none; fill: #f3f4f5"></path></svg>
+  </div>
+  
+  <div class="container">   
     <div class="row my-5">
       <div class="col-md-6 col-lg-6 col-12 p-0 m-0">     
           <figure>
@@ -152,16 +162,20 @@
           <h6>What Makes us Great!</h6>
            <h1 class='heading secondary-font'>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Odit, doloremque.</h1>
           <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum dolorem facere numquam ratione, totam ullam repellendus, sequi eum optio et.</p>           
-          <button type='button' class='btn btn-outline-danger btn-sm rounded d-inline text-uppercase rounded-cs'>learn more</button>
+          <button type='button' class='btn btn-outline-danger btn-sm d-inline text-uppercase rounded-cs'>learn more</button>
         </div>
     </div>
   </div>
 </section>
 
 
+<!-- Reference -->
+<!-- Reference Ending -->
+
 
 
 <!-- Greating End  -->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -169,6 +183,6 @@
       duration:1000,
     });
   </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
